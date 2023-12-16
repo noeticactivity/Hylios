@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF38CC2A2B2D619A004CCFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF38CC292B2D619A004CCFEB /* LaunchScreen.storyboard */; };
+		CF38CC2E2B2D61D5004CCFEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38CC2D2B2D61D5004CCFEB /* SceneDelegate.swift */; };
+		CF38CC312B2D6314004CCFEB /* UnsupportedDevice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF38CC302B2D6314004CCFEB /* UnsupportedDevice.storyboard */; };
 		CFB83A352B2D5749005A3B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A342B2D5749005A3B66 /* AppDelegate.swift */; };
 		CFB83A372B2D5749005A3B66 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB83A362B2D5749005A3B66 /* art.scnassets */; };
-		CFB83A392B2D5749005A3B66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A382B2D5749005A3B66 /* ViewController.swift */; };
-		CFB83A3C2B2D5749005A3B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB83A3A2B2D5749005A3B66 /* Main.storyboard */; };
 		CFB83A3E2B2D574A005A3B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB83A3D2B2D574A005A3B66 /* Assets.xcassets */; };
 		CFB83A482B2D574A005A3B66 /* EtherealDimensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A472B2D574A005A3B66 /* EtherealDimensionTests.swift */; };
 		CFB83A522B2D574A005A3B66 /* EtherealDimensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A512B2D574A005A3B66 /* EtherealDimensionUITests.swift */; };
 		CFB83A542B2D574A005A3B66 /* EtherealDimensionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A532B2D574A005A3B66 /* EtherealDimensionUITestsLaunchTests.swift */; };
+		CFB83A632B2D5765005A3B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB83A602B2D5764005A3B66 /* Main.storyboard */; };
+		CFB83A642B2D5765005A3B66 /* RoomCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */; };
+		CFB83A652B2D5765005A3B66 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,17 +39,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF38CC292B2D619A004CCFEB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF38CC2B2B2D61C9004CCFEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF38CC2D2B2D61D5004CCFEB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF38CC302B2D6314004CCFEB /* UnsupportedDevice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UnsupportedDevice.storyboard; sourceTree = "<group>"; };
 		CFB83A312B2D5749005A3B66 /* EtherealDimension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtherealDimension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB83A342B2D5749005A3B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB83A362B2D5749005A3B66 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		CFB83A382B2D5749005A3B66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CFB83A3B2B2D5749005A3B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFB83A3D2B2D574A005A3B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB83A432B2D574A005A3B66 /* EtherealDimensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtherealDimensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB83A472B2D574A005A3B66 /* EtherealDimensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionTests.swift; sourceTree = "<group>"; };
 		CFB83A4D2B2D574A005A3B66 /* EtherealDimensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtherealDimensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB83A512B2D574A005A3B66 /* EtherealDimensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITests.swift; sourceTree = "<group>"; };
 		CFB83A532B2D574A005A3B66 /* EtherealDimensionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CFB83A602B2D5764005A3B66 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewController.swift; sourceTree = "<group>"; };
+		CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				CFB83A342B2D5749005A3B66 /* AppDelegate.swift */,
+				CF38CC2D2B2D61D5004CCFEB /* SceneDelegate.swift */,
 				CFB83A362B2D5749005A3B66 /* art.scnassets */,
-				CFB83A382B2D5749005A3B66 /* ViewController.swift */,
-				CFB83A3A2B2D5749005A3B66 /* Main.storyboard */,
+				CFB83A602B2D5764005A3B66 /* Main.storyboard */,
+				CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */,
+				CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */,
 				CFB83A3D2B2D574A005A3B66 /* Assets.xcassets */,
+				CF38CC292B2D619A004CCFEB /* LaunchScreen.storyboard */,
+				CF38CC302B2D6314004CCFEB /* UnsupportedDevice.storyboard */,
+				CF38CC2B2B2D61C9004CCFEB /* Info.plist */,
 			);
 			path = EtherealDimension;
 			sourceTree = "<group>";
@@ -226,9 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF38CC312B2D6314004CCFEB /* UnsupportedDevice.storyboard in Resources */,
 				CFB83A372B2D5749005A3B66 /* art.scnassets in Resources */,
+				CF38CC2A2B2D619A004CCFEB /* LaunchScreen.storyboard in Resources */,
 				CFB83A3E2B2D574A005A3B66 /* Assets.xcassets in Resources */,
-				CFB83A3C2B2D5749005A3B66 /* Main.storyboard in Resources */,
+				CFB83A632B2D5765005A3B66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB83A392B2D5749005A3B66 /* ViewController.swift in Sources */,
 				CFB83A352B2D5749005A3B66 /* AppDelegate.swift in Sources */,
+				CFB83A642B2D5765005A3B66 /* RoomCaptureViewController.swift in Sources */,
+				CFB83A652B2D5765005A3B66 /* OnboardingViewController.swift in Sources */,
+				CF38CC2E2B2D61D5004CCFEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,17 +307,6 @@
 			targetProxy = CFB83A4E2B2D574A005A3B66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CFB83A3A2B2D5749005A3B66 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFB83A3B2B2D5749005A3B66 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CFB83A552B2D574A005A3B66 /* Debug */ = {
@@ -354,7 +361,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_NSMainNibFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -411,7 +420,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_NSMainNibFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -430,13 +441,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EtherealDimension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hylios;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,13 +475,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EtherealDimension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hylios;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMainNibFile = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
