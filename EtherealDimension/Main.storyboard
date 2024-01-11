@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdR-sG-hoR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdP-FP-EBm">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="5648" identifier="iOS"/>
@@ -9,16 +9,105 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Room Type View Controller-->
+        <scene sceneID="XGe-mN-QTJ">
+            <objects>
+                <viewController id="qdP-FP-EBm" customClass="RoomTypeViewController" customModule="EtherealDimension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPB-02-trI">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec0-es-HWW">
+                                <rect key="frame" x="73" y="233" width="282" height="42.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42.333333333333314" id="QLh-kS-63e"/>
+                                </constraints>
+                                <string key="text">Please Help Us Understand What Space You Are Scanning
+</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-3Z-AT4">
+                                <rect key="frame" x="140.66666666666666" y="177" width="146.99999999999997" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyo-08-29v">
+                                <rect key="frame" x="0.0" y="505" width="428" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="3kR-xA-8Q7"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="qdP-FP-EBm" id="4jr-vm-M7w"/>
+                                    <outlet property="delegate" destination="qdP-FP-EBm" id="mEM-3u-3Zt"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="hWV-hx-H2f">
+                                <rect key="frame" x="114" y="809" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="43p-1j-9W2"/>
+                                    <constraint firstAttribute="height" constant="50" id="qAk-gd-EgH"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Begin" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startScan:" destination="qdR-sG-hoR" eventType="touchUpInside" id="ku4-rS-eZP"/>
+                                    <segue destination="qdR-sG-hoR" kind="presentation" id="V7E-rC-K7Z"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bj4-TA-A5w">
+                                <rect key="frame" x="20" y="447.66666666666669" width="388" height="32"/>
+                                <segments>
+                                    <segment title="Residential"/>
+                                    <segment title="Commercial"/>
+                                    <segment title="Public"/>
+                                </segments>
+                                <connections>
+                                    <action selector="spaceTypeChanged:" destination="qdP-FP-EBm" eventType="valueChanged" id="sr1-ib-Dql"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HYJ-dd-nxP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ec0-es-HWW" firstAttribute="leading" secondItem="HYJ-dd-nxP" secondAttribute="leading" constant="73" id="3Uz-SB-GFX"/>
+                            <constraint firstItem="Bj4-TA-A5w" firstAttribute="centerX" secondItem="Ec0-es-HWW" secondAttribute="centerX" id="4fA-eB-ngV"/>
+                            <constraint firstItem="Ec0-es-HWW" firstAttribute="top" secondItem="cp4-3Z-AT4" secondAttribute="bottom" constant="15" id="AjJ-2z-dN9"/>
+                            <constraint firstItem="HYJ-dd-nxP" firstAttribute="bottom" secondItem="hWV-hx-H2f" secondAttribute="bottom" constant="33" id="EyJ-Wx-lIF"/>
+                            <constraint firstItem="hWV-hx-H2f" firstAttribute="centerX" secondItem="JPB-02-trI" secondAttribute="centerX" id="KGr-1a-2W8"/>
+                            <constraint firstItem="Bj4-TA-A5w" firstAttribute="centerY" secondItem="JPB-02-trI" secondAttribute="centerY" id="KSU-NQ-wQg"/>
+                            <constraint firstItem="cp4-3Z-AT4" firstAttribute="top" secondItem="HYJ-dd-nxP" secondAttribute="top" constant="130" id="W53-Pv-XYa"/>
+                            <constraint firstItem="Bj4-TA-A5w" firstAttribute="leading" secondItem="JPB-02-trI" secondAttribute="leadingMargin" id="YwW-ap-Mc5"/>
+                            <constraint firstItem="Jyo-08-29v" firstAttribute="centerX" secondItem="hWV-hx-H2f" secondAttribute="centerX" id="a8s-i1-G17"/>
+                            <constraint firstItem="Jyo-08-29v" firstAttribute="leading" secondItem="HYJ-dd-nxP" secondAttribute="leading" id="iOg-YW-bDx"/>
+                            <constraint firstItem="Ec0-es-HWW" firstAttribute="centerX" secondItem="cp4-3Z-AT4" secondAttribute="centerX" id="nbr-9T-voi"/>
+                            <constraint firstItem="HYJ-dd-nxP" firstAttribute="bottom" secondItem="Jyo-08-29v" secondAttribute="bottom" constant="139" id="orv-kp-cqR"/>
+                            <constraint firstItem="Ec0-es-HWW" firstAttribute="centerX" secondItem="hWV-hx-H2f" secondAttribute="centerX" id="qHW-FE-nsi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spaceOptions" destination="Jyo-08-29v" id="qoV-7T-Dde"/>
+                        <outlet property="spaceType" destination="Bj4-TA-A5w" id="cjH-Nv-gp1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFG-7V-7Cg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2286.4485981308408" y="132.82937365010801"/>
+        </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="m66-v5-RJU">
             <objects>
                 <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qdR-sG-hoR" customClass="OnboardingViewController" customModule="EtherealDimension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yBf-P1-2uZ">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-tu-CeD">
-                                <rect key="frame" x="40" y="233" width="348" height="152.33333333333337"/>
+                                <rect key="frame" x="40" y="186" width="348" height="152.33333333333337"/>
                                 <string key="text">To scan your room, point your device at all the walls, windows, doors and furniture in your space until your scan is complete.
 
 You can see a preview of your scan at the bottom of the screen so you can make sure your scan is correct. </string>
@@ -26,12 +115,12 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoomPlan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-He-YN5">
-                                <rect key="frame" x="133.66666666666669" y="177" width="160.66666666666669" height="41"/>
+                                <rect key="frame" x="133.66666666666669" y="130" width="160.66666666666669" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="r5J-Dx-sgl">
-                                <rect key="frame" x="114" y="809" width="200" height="50"/>
+                                <rect key="frame" x="114" y="833" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QUA-Ca-Q71"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="sD5-cO-lCf"/>
@@ -60,6 +149,7 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                             <constraint firstAttribute="trailing" secondItem="7pk-tu-CeD" secondAttribute="trailing" constant="40" id="fCa-8j-XGw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NMq-Ci-yre"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnn-iT-DWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

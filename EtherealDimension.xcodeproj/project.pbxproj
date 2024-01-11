@@ -19,6 +19,7 @@
 		CFB83A632B2D5765005A3B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB83A602B2D5764005A3B66 /* Main.storyboard */; };
 		CFB83A642B2D5765005A3B66 /* RoomCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */; };
 		CFB83A652B2D5765005A3B66 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */; };
+		CFF19F3A2B469F57004E9CC7 /* RoomTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF19F392B469F57004E9CC7 /* RoomTypeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CFB83A602B2D5764005A3B66 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewController.swift; sourceTree = "<group>"; };
 		CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CFF19F392B469F57004E9CC7 /* RoomTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTypeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				CFB83A602B2D5764005A3B66 /* Main.storyboard */,
 				CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */,
 				CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */,
+				CFF19F392B469F57004E9CC7 /* RoomTypeViewController.swift */,
 				CFB83A3D2B2D574A005A3B66 /* Assets.xcassets */,
 				CF38CC292B2D619A004CCFEB /* LaunchScreen.storyboard */,
 				CF38CC302B2D6314004CCFEB /* UnsupportedDevice.storyboard */,
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF19F3A2B469F57004E9CC7 /* RoomTypeViewController.swift in Sources */,
 				CFB83A352B2D5749005A3B66 /* AppDelegate.swift in Sources */,
 				CFB83A642B2D5765005A3B66 /* RoomCaptureViewController.swift in Sources */,
 				CFB83A652B2D5765005A3B66 /* OnboardingViewController.swift in Sources */,
